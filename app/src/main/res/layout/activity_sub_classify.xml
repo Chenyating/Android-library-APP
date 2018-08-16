@@ -1,0 +1,41 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/main_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/sub_classify_urm_top" />
+
+    <TextView
+        android:id="@+id/rule_line_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/main_top"
+         />
+
+    <TextView
+        android:id="@+id/rule_line01_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <!--<TextView
+        android:id="@+id/main_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="24dp"
+        android:text="主界面" />-->
+
+    <ListView
+        android:id="@+id/sub_classify_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/rule_line_tv"/>
+
+</RelativeLayout>

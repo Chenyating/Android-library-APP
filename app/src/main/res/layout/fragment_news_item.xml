@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="2dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/news_date_tv"
+        android:textSize="16dp"
+        android:text="[2017-11-9]"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/news_tittle_tv"
+        android:textSize="16dp"
+        android:text="InCites - Benchmarking数据库正式开通通知"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+</LinearLayout>

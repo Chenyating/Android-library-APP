@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/logo111" ><!-- #eeeeee -->
+
+    <LinearLayout
+        android:id="@+id/urm_top_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="35dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/urm_top_tv"
+                style="@style/main_tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小说"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/urm_top_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="#3366CC"/>
+        </LinearLayout>
+        <!--<TextView
+            android:id="@+id/urm_top_tv"
+            style="@style/main_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部" />-->
+
+        <ImageView
+            android:id="@+id/urm_top_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/down32new" />
+    </LinearLayout>
+
+</RelativeLayout>

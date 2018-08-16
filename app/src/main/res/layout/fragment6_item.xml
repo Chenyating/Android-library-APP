@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cd_number_tv"
+        android:text="光盘号：S0035728  "
+        android:textColor="@android:color/holo_red_dark"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cd_tittle_tv"
+        android:text="光盘标题：PHP动态网站开发案例课堂	"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cd_classify_number_tv"
+        android:text="光盘分类号：TP312/6838"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cd_state_tv"
+        android:text="光盘状态：好"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cd_publish_identify_tv"
+        android:text="出版标识：ISBN978-7-89395-662-1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cd_publisher_tv"
+        android:text="出版社：清华大学出版社"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cd_location_tv"
+        android:text="资源位置：图书馆四楼电子阅览室B435室"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cd_available_number"
+        android:text="可用资源数：6"/>
+
+</LinearLayout>

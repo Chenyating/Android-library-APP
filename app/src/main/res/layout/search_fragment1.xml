@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/test_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+
+        android:layout_gravity="center">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 搜索框线性布局开始 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/li_focus"
+                android:layout_gravity="center">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:overlapAnchor="false"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/search_item_spinner"/>
+
+                <SearchView
+                    android:id="@+id/sv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="搜索图书资源"/>
+            </LinearLayout>
+            <!-- 搜索框线性布局结束 -->
+
+            <!-- 猜你喜欢   换一批提示线性布局开始 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="猜你喜欢"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="换一批"
+                    android:id="@+id/change_guess_you_like_TextView"
+                    android:textColor="#3A5FCD"
+                    android:textSize="15dp"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+            <!-- 猜你喜欢   换一批提示线性布局结束 -->
+
+            <!-- 猜你喜欢内容ListView展示布局开始 -->
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <com.example.xiaobaixiaoda.buttom3.SearchListView
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/guess_you_like_content_ListView"
+                android:dividerHeight="2dp"/>
+
+            </LinearLayout>
+            <!-- 猜你喜欢内容ListView展示布局结束 -->
+
+            <!-- 新书到馆提示线性布局开始 -->
+            <!--<LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="新书到馆"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/get_all_new_books_TextView"
+                    android:text="查看全部"
+                    android:textColor="#3A5FCD"
+                    android:textSize="15dp"
+                    android:gravity="right"/>
+
+            </LinearLayout>-->
+            <!-- 新书到馆提示线性布局结束 -->
+
+            <!-- 新书到馆模块内容GridView布局展示开始 -->
+            <!--<LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">-->
+
+            <!--<com.example.xiaobaixiaoda.buttom3.SearchGridView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_books_GridView"
+                android:columnWidth="80dp"
+                android:stretchMode="columnWidth"
+                android:numColumns="auto_fit"/>-->
+
+            <!--</LinearLayout>-->
+            <!-- 新书到馆模块内容GridView布局展示结束 -->
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:text="猜你喜欢"/>
+            <LinearLayout
+                android:id="@+id/hot_search_content_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="18dp">
+            </LinearLayout>
+        </LinearLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

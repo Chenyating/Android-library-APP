@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/borrow_back_isbn_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ISBN：JSJ456648899"/>
+
+        <TextView
+            android:id="@+id/borrow_back_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="书名：计算机体系结构"/>
+
+        <TextView
+            android:id="@+id/borrow_back_author_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="作者：胡伟武"/>
+
+        <TextView
+            android:id="@+id/borrow_back_publisher_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="出版社：中国科学院出版社"/>
+
+        <TextView
+            android:id="@+id/borrow_back_borrowdate_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="借阅日期：2017.10.25"/>
+
+        <TextView
+            android:id="@+id/borrow_back_backdate_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="归还日期：2017.11.25"/>
+
+        <TextView
+            android:id="@+id/borrow_back_delay_days_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="超期天数：3天"/>
+
+        <TextView
+            android:id="@+id/borrow_back_delay_money_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="缴纳罚金：0.3元"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/borrow_back_continueborrow_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:text="续借"/>
+        <TextView
+            android:id="@+id/borrow_back_delay_deal_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_red_dark"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="逾期处理"/>
+        <TextView
+            android:id="@+id/borrow_back_backbook_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:text="还书"/>
+    </LinearLayout>
+
+</LinearLayout>

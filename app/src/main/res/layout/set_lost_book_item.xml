@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/all_borrow_books_isbn_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ISBN：JSJ456648899"/>
+
+                <TextView
+                    android:id="@+id/all_borrow_books_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="书名：计算机体系结构"/>
+
+                <TextView
+                    android:id="@+id/all_borrow_books_author_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="作者：胡伟武"/>
+
+                <TextView
+                    android:id="@+id/all_borrow_books_publisher_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="出版社：中国科学院出版社"/>
+
+                <TextView
+                    android:id="@+id/all_borrow_books_borrowdate_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="借阅日期：2017.10.25"/>
+
+                <TextView
+                    android:id="@+id/all_borrow_books_price_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="图书单价：45.00元"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/all_borrow_books_lost_tv"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:text="一键挂失"/>
+
+        </LinearLayout>
+
+</LinearLayout>

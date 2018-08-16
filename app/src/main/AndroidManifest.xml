@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xiaobaixiaoda.buttom3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SearchBookIndexActivity" />
+        <activity android:name=".SearchBookActivity" />
+        <activity android:name=".ClassifyIndexActivity" />
+        <activity android:name=".DetailClassifyActivity" />
+        <activity android:name=".SubClassifyActivity" />
+        <activity android:name=".BorrowBackActivity" />
+        <activity android:name=".DelayDealActivity" />
+        <activity android:name=".AllBorrowBooksActivity" />
+        <activity android:name=".LostBookActivity" />
+        <activity android:name=".LibraryNoticeActivity" />
+        <activity android:name=".ServiceGuideActivity" />
+        <activity android:name=".MyFavoriteActivity" />
+        <activity android:name=".DetailBookInfoActivity" />
+        <activity android:name=".DetailQiKanInfoActivity" />
+        <activity android:name=".DetailNewspaperInfoActivity" />
+        <activity android:name=".DetailPaperInfoActivity" />
+        <activity android:name=".SearchQikanActivity" />
+        <activity android:name=".SearchNewspaperActivity" />
+        <activity android:name=".SearchPaperActivity" />
+        <activity android:name=".SearchChapterActivity" />
+        <activity android:name=".SearchCDActivity" />
+        <activity android:name=".BookSearchResultActivity" />
+        <activity android:name=".QiKanSearchResultActivity" />
+        <activity android:name=".NewspaperSearchResultAvtivity" />
+        <activity android:name=".PaperSearchResultActivity" />
+        <activity android:name=".ChapterSearchResultActivity" />
+        <activity android:name=".CDSearchResultActivity" />
+        <activity android:name=".NormalProblemActivity" />
+        <activity android:name=".PersonInfoActivity" />
+        <activity android:name=".ModifyPasswordActivity" />
+        <activity android:name=".LockSocialMediaActivity" />
+        <activity android:name=".HistoryBorrowRecordActivity" />
+        <activity android:name=".GiveYourAdviceActivity" />
+        <activity android:name=".ReadBookOnlineActivity" />
+        <activity android:name=".AppLaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".ShowServiceContentActivity" />
+        <activity android:name=".UserAllSearchHistoryActivity" />
+        <activity android:name=".MyOrderActivity" />
+        <activity android:name=".AllLostBooksActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_give_your_advice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xiaobaixiaoda.buttom3.GiveYourAdviceActivity">
+
+    <!-- 标题 -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo111"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!-- 标题左侧取消按钮 -->
+        <TextView
+            android:id="@+id/tittle_cancel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:text="取消"
+            android:layout_weight="1"/>
+        <!-- 标题中间标题文字 -->
+        <TextView
+            android:id="@+id/tittle_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="意见反馈"
+            android:layout_weight="1"/>
+        <!-- 标题右侧提交按钮 -->
+        <TextView
+            android:id="@+id/tittle_submit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:text="提交"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/index_fragment_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:layout_gravity="center">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 提示文字框 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="16dp"
+                android:text="        为了更好的满足广大师生的需求，提升图书馆的服务质量。现积极征求大家的意见和建议反馈。请认真填写您对本馆的意见和建议，同时我馆也真诚希望各位师生能够积极反馈您的宝贵意见。"/>
+
+            <!-- 文字输入框 -->
+            <MultiAutoCompleteTextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的意见"
+                android:id="@+id/advice_multiAutoCompleteTextView" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
